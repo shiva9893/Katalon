@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Smoke</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>6c1bc0a5-9afa-458b-99e2-88090e3b862a</testSuiteGuid>
+   <testCaseLink>
+      <guid>bc5d173d-4ea6-40ad-80c7-541b1eb270bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c2f3b898-53a8-4801-8efa-55be45061c89</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/LoginData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75f83450-90eb-4b20-90a3-28162048d3d2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c2f3b898-53a8-4801-8efa-55be45061c89</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UserName</value>
+         <variableId>bcdce87f-0705-4152-ad89-be9b01256535</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c2f3b898-53a8-4801-8efa-55be45061c89</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>a2038373-723e-4757-9cef-224032b8d7d9</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

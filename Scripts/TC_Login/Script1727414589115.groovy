@@ -19,21 +19,29 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+def expected_Dahsboard_Title = 'Dashboard'
+
+WebUI.navigateToUrl(appURL)
 
 WebUI.waitForPageLoad(10)
 
+WebUI.maximizeWindow()
+
+WebUI.takeScreenshot()
+
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'))
 
-WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), 'Admin')
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), userName)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), password)
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/button_Login'))
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/h6_Dashboard'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Page_OrangeHRM/h6_Dashboard'))
+String actual_Dashboard_Title = WebUI.getText(findTestObject('Object Repository/Page_OrangeHRM/h6_Dashboard'))
+
+WebUI.verifyEqual(expected_Dahsboard_Title, actual_Dashboard_Title)
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/i_Upgrade_oxd-icon bi-caret-down-fill oxd-u_ca92f9'))
 

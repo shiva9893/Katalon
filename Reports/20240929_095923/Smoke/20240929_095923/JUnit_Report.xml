@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke" time="73.863" tests="2" failures="1" errors="0">
+   <testsuite name="Smoke" tests="2" failures="1" errors="0" time="73.863" skipped="0" timestamp="29-09-2024T09:59:27" hostname="Kumar - DESKTOP-44PTID5" id="Test Suites/Smoke">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Kumar\\git\\Katalon\\Reports\\20240929_095923\\Smoke\\20240929_095923"/>
+         <property name="logFiles" value="C:\\Users\\Kumar\\git\\Katalon\\Reports\\20240929_095923\\Smoke\\20240929_095923\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Kumar\\git\\Katalon\\Reports\\20240929_095923\\Smoke\\20240929_095923\\1727584177338.png, C:\\Users\\Kumar\\git\\Katalon\\Reports\\20240929_095923\\Smoke\\20240929_095923\\1727584201869.png"/>
+         <property name="hostName" value="Kumar - DESKTOP-44PTID5"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.7.2.223"/>
+         <property name="browser" value="Chrome 129.0.0.0"/>
+         <property name="hostAddress" value="192.168.1.9"/>
+         <property name="sessionId" value="aacb683ed2616e0946256784467283b4"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=USE_SYSTEM, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TC_Login" time="25.483" classname="Test Cases/TC_Login" status="PASSED">
+         <system-out><![CDATA[29-09-2024T09:59:28 - [TEST_CASE][PASSED] - Test Cases/TC_Login: Test Cases/TC_Login
+
+29-09-2024T09:59:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+29-09-2024T09:59:28 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+29-09-2024T09:59:28 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+29-09-2024T09:59:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+29-09-2024T09:59:31 - [TEST_STEP][PASSED] - expected_Dahsboard_Title = "Dashboard": null
+
+29-09-2024T09:59:31 - [TEST_STEP][PASSED] - navigateToUrl(appURL): Navigate to 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' successfully
+
+29-09-2024T09:59:36 - [MESSAGE][PASSED] - Navigate to 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' successfully
+
+29-09-2024T09:59:36 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+29-09-2024T09:59:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+29-09-2024T09:59:36 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+29-09-2024T09:59:36 - [MESSAGE][PASSED] - Current window maximized
+
+29-09-2024T09:59:36 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+29-09-2024T09:59:37 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Kumar\\git\\Katalon\\Reports\\20240929_095923\\Smoke\\20240929_095923\\1727584177338.png]]
+
+29-09-2024T09:59:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/input_Username_username")): Object: 'Object Repository/Page_OrangeHRM/input_Username_username' is clicked on
+
+29-09-2024T09:59:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/input_Username_username' is clicked on
+
+29-09-2024T09:59:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_OrangeHRM/input_Username_username"), userName): Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/input_Username_username'
+
+29-09-2024T09:59:42 - [MESSAGE][PASSED] - Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/input_Username_username'
+
+29-09-2024T09:59:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_OrangeHRM/input_Password_password"), password): Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/input_Password_password'
+
+29-09-2024T09:59:43 - [MESSAGE][PASSED] - Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/input_Password_password'
+
+29-09-2024T09:59:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/button_Login")): Object: 'Object Repository/Page_OrangeHRM/button_Login' is clicked on
+
+29-09-2024T09:59:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/button_Login' is clicked on
+
+29-09-2024T09:59:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/h6_Dashboard")): Object: 'Object Repository/Page_OrangeHRM/h6_Dashboard' is clicked on
+
+29-09-2024T09:59:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/h6_Dashboard' is clicked on
+
+29-09-2024T09:59:46 - [TEST_STEP][PASSED] - actual_Dashboard_Title = getText(findTestObject("Object Repository/Page_OrangeHRM/h6_Dashboard")): Text of object 'Object Repository/Page_OrangeHRM/h6_Dashboard' is: 'Dashboard'
+
+29-09-2024T09:59:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_OrangeHRM/h6_Dashboard' is: 'Dashboard'
+
+29-09-2024T09:59:48 - [TEST_STEP][PASSED] - verifyEqual(expected_Dahsboard_Title, actual_Dashboard_Title): Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+29-09-2024T09:59:48 - [MESSAGE][PASSED] - Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+29-09-2024T09:59:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/i_Upgrade_oxd-icon bi-caret-down-fill oxd-u_ca92f9")): Object: 'Object Repository/Page_OrangeHRM/i_Upgrade_oxd-icon bi-caret-down-fill oxd-u_ca92f9' is clicked on
+
+29-09-2024T09:59:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/i_Upgrade_oxd-icon bi-caret-down-fill oxd-u_ca92f9' is clicked on
+
+29-09-2024T09:59:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/a_Logout")): Object: 'Object Repository/Page_OrangeHRM/a_Logout' is clicked on
+
+29-09-2024T09:59:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/a_Logout' is clicked on
+
+29-09-2024T09:59:52 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+29-09-2024T09:59:53 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Login" time="48.054" classname="Test Cases/TC_Login" status="FAILED">
+         <failure type="FAILED" message="Test Cases/TC_Login FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)&#xa;	at TC_Login.run(TC_Login:40)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found&#xa;	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)&#xa;	... 20 more&#xa;"/>
+         <system-out><![CDATA[29-09-2024T09:59:53 - [TEST_CASE][FAILED] - Test Cases/TC_Login: Test Cases/TC_Login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at TC_Login.run(TC_Login:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more
+
+
+29-09-2024T09:59:53 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+29-09-2024T09:59:53 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+29-09-2024T09:59:53 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+29-09-2024T09:59:57 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+29-09-2024T09:59:57 - [TEST_STEP][PASSED] - expected_Dahsboard_Title = "Dashboard": null
+
+29-09-2024T09:59:57 - [TEST_STEP][PASSED] - navigateToUrl(appURL): Navigate to 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' successfully
+
+29-09-2024T10:00:00 - [MESSAGE][PASSED] - Navigate to 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' successfully
+
+29-09-2024T10:00:00 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+29-09-2024T10:00:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+29-09-2024T10:00:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+29-09-2024T10:00:01 - [MESSAGE][PASSED] - Current window maximized
+
+29-09-2024T10:00:01 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+29-09-2024T10:00:03 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Kumar\\git\\Katalon\\Reports\\20240929_095923\\Smoke\\20240929_095923\\1727584201869.png]]
+
+29-09-2024T10:00:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/input_Username_username")): Object: 'Object Repository/Page_OrangeHRM/input_Username_username' is clicked on
+
+29-09-2024T10:00:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/input_Username_username' is clicked on
+
+29-09-2024T10:00:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_OrangeHRM/input_Username_username"), userName): Text 'Shiva' is set on object 'Object Repository/Page_OrangeHRM/input_Username_username'
+
+29-09-2024T10:00:04 - [MESSAGE][PASSED] - Text 'Shiva' is set on object 'Object Repository/Page_OrangeHRM/input_Username_username'
+
+29-09-2024T10:00:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_OrangeHRM/input_Password_password"), password): Text 'shiva123' is set on object 'Object Repository/Page_OrangeHRM/input_Password_password'
+
+29-09-2024T10:00:05 - [MESSAGE][PASSED] - Text 'shiva123' is set on object 'Object Repository/Page_OrangeHRM/input_Password_password'
+
+29-09-2024T10:00:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_OrangeHRM/button_Login")): Object: 'Object Repository/Page_OrangeHRM/button_Login' is clicked on
+
+29-09-2024T10:00:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/button_Login' is clicked on
+
+29-09-2024T10:00:05 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/Page_OrangeHRM/h6_Dashboard")): Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at TC_Login.run(TC_Login:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at Script1727414589115.run(Script1727414589115.groovy:40)
+	... 15 more
+)
+
+29-09-2024T10:00:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='app']/div/div/header/div/div/span/h6'. Please recheck the objects properties to make sure the desired element is located. 
+
+29-09-2024T10:00:36 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Page_OrangeHRM/h6_Dashboard'. Try using Self-healing.
+
+29-09-2024T10:00:37 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//div[@id='app']/div/div/header/div/div/span/h6'.
+
+29-09-2024T10:00:37 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//h6'.
+
+29-09-2024T10:00:37 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//h6[(text() = 'Dashboard' or . = 'Dashboard')]'.
+
+29-09-2024T10:00:37 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//div[@id='app']/div/div/header/div/div/span/h6'.
+
+29-09-2024T10:00:37 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//h6'.
+
+29-09-2024T10:00:38 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//h6[(text() = 'Dashboard' or . = 'Dashboard')]'.
+
+29-09-2024T10:00:40 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[(text() = 'Dashboard' or . = 'Dashboard')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+29-09-2024T10:00:41 - [MESSAGE][INFO] - Unable to find the element located by 'By.cssSelector: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module'. Please recheck the objects properties to make sure the desired element is located. 
+
+29-09-2024T10:00:41 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at TC_Login.run(TC_Login:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at Script1727414589115.run(Script1727414589115.groovy:40)
+	... 15 more
+)]]></system-out>
+         <system-err><![CDATA[29-09-2024T09:59:53 - [TEST_CASE][FAILED] - Test Cases/TC_Login: Test Cases/TC_Login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at TC_Login.run(TC_Login:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[29-09-2024T09:59:27 - [TEST_SUITE][FAILED] - Smoke: Test Cases/TC_Login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at TC_Login.run(TC_Login:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[29-09-2024T09:59:27 - [TEST_SUITE][FAILED] - Smoke: Test Cases/TC_Login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_OrangeHRM/h6_Dashboard'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:659)
+	at TC_Login.run(TC_Login:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1727584163511.run(TempTestSuite1727584163511.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_OrangeHRM/h6_Dashboard' located by '//div[@id='app']/div/div/header/div/div/span/h6' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1419)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

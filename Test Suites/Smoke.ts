@@ -45,4 +45,11 @@
          <variableId>a2038373-723e-4757-9cef-224032b8d7d9</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>55182f7d-18a8-4c05-a5d6-58861222ba3b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_Validate_Side_Menu</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

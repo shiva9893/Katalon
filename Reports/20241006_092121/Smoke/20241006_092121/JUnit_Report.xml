@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke" time="36.492" tests="2" failures="0" errors="0">
+   <testsuite name="Smoke" tests="2" failures="0" errors="0" time="36.492" skipped="0" timestamp="06-10-2024T09:21:29" hostname="HP - popye" id="Test Suites/Smoke">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\HP\\git\\Katalon\\Reports\\20241006_092121\\Smoke\\20241006_092121"/>
+         <property name="logFiles" value="C:\\Users\\HP\\git\\Katalon\\Reports\\20241006_092121\\Smoke\\20241006_092121\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\HP\\git\\Katalon\\Reports\\20241006_092121\\Smoke\\20241006_092121\\1728231701635.png, C:\\Users\\HP\\git\\Katalon\\Reports\\20241006_092121\\Smoke\\20241006_092121\\1728231716516.png"/>
+         <property name="hostName" value="HP - popye"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.7.2.223"/>
+         <property name="browser" value="Chrome 129.0.0.0"/>
+         <property name="hostAddress" value="192.168.1.10"/>
+         <property name="sessionId" value="74eaa256528767eca4f04aa420c96a43"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TC_Login" time="17.234" classname="Test Cases/TC_Login" status="PASSED">
+         <system-out><![CDATA[06-10-2024T09:21:29 - [TEST_CASE][PASSED] - Test Cases/TC_Login: Test Cases/TC_Login
+
+06-10-2024T09:21:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+06-10-2024T09:21:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+06-10-2024T09:21:31 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+06-10-2024T09:21:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+06-10-2024T09:21:34 - [TEST_STEP][PASSED] - expected_Dahsboard_Title = "Dashboard": null
+
+06-10-2024T09:21:34 - [TEST_STEP][PASSED] - navigateToUrl(appURL): Navigate to 'https://opensource-demo.orangehrmlive.com/auth/login' successfully
+
+06-10-2024T09:21:40 - [MESSAGE][PASSED] - Navigate to 'https://opensource-demo.orangehrmlive.com/auth/login' successfully
+
+06-10-2024T09:21:40 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+06-10-2024T09:21:40 - [MESSAGE][PASSED] - Wait for page load successfully
+
+06-10-2024T09:21:40 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+06-10-2024T09:21:40 - [MESSAGE][PASSED] - Current window maximized
+
+06-10-2024T09:21:40 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+06-10-2024T09:21:41 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\HP\\git\\Katalon\\Reports\\20241006_092121\\Smoke\\20241006_092121\\1728231701635.png]]
+
+06-10-2024T09:21:41 - [TEST_STEP][PASSED] - setText(findTestObject("Page_OrangeHRM/LoginPage/input_Username_username"), userName): Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Username_username'
+
+06-10-2024T09:21:43 - [MESSAGE][PASSED] - Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Username_username'
+
+06-10-2024T09:21:43 - [TEST_STEP][PASSED] - setText(findTestObject("Page_OrangeHRM/LoginPage/input_Password_password"), password): Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Password_password'
+
+06-10-2024T09:21:43 - [MESSAGE][PASSED] - Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Password_password'
+
+06-10-2024T09:21:43 - [TEST_STEP][PASSED] - click(findTestObject("Page_OrangeHRM/LoginPage/button_Login")): Object: 'Object Repository/Page_OrangeHRM/LoginPage/button_Login' is clicked on
+
+06-10-2024T09:21:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/LoginPage/button_Login' is clicked on
+
+06-10-2024T09:21:45 - [TEST_STEP][PASSED] - actual_Dashboard_Title = getText(findTestObject("Page_OrangeHRM/LoginPage/h6_Dashboard")): Text of object 'Object Repository/Page_OrangeHRM/LoginPage/h6_Dashboard' is: 'Dashboard'
+
+06-10-2024T09:21:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_OrangeHRM/LoginPage/h6_Dashboard' is: 'Dashboard'
+
+06-10-2024T09:21:46 - [TEST_STEP][PASSED] - verifyEqual(expected_Dahsboard_Title, actual_Dashboard_Title): Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+06-10-2024T09:21:46 - [MESSAGE][PASSED] - Actual object 'Dashboard' and expected object 'Dashboard' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Validate_Side_Menu" time="18.734" classname="Test Cases/TC_Validate_Side_Menu" status="PASSED">
+         <system-out><![CDATA[06-10-2024T09:21:46 - [TEST_CASE][PASSED] - Test Cases/TC_Validate_Side_Menu: Test Cases/TC_Validate_Side_Menu
+
+06-10-2024T09:21:47 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TC_Login"), ["appURL":"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", "userName":"Admin", "password":"admin123"], STOP_ON_FAILURE): Call Test Case 'Test Cases/TC_Login' successfully
+
+06-10-2024T09:21:47 - [TEST_CASE][PASSED] - Test Cases/TC_Login: Test Cases/TC_Login
+
+06-10-2024T09:21:47 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+06-10-2024T09:21:47 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+06-10-2024T09:21:48 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+06-10-2024T09:21:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+06-10-2024T09:21:50 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+06-10-2024T09:21:50 - [TEST_STEP][PASSED] - expected_Dahsboard_Title = "Dashboard": null
+
+06-10-2024T09:21:50 - [TEST_STEP][PASSED] - navigateToUrl(appURL): Navigate to 'https://opensource-demo.orangehrmlive.com/auth/login' successfully
+
+06-10-2024T09:21:55 - [MESSAGE][PASSED] - Navigate to 'https://opensource-demo.orangehrmlive.com/auth/login' successfully
+
+06-10-2024T09:21:55 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+06-10-2024T09:21:55 - [MESSAGE][PASSED] - Wait for page load successfully
+
+06-10-2024T09:21:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+06-10-2024T09:21:55 - [MESSAGE][PASSED] - Current window maximized
+
+06-10-2024T09:21:55 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+06-10-2024T09:21:56 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\HP\\git\\Katalon\\Reports\\20241006_092121\\Smoke\\20241006_092121\\1728231716516.png]]
+
+06-10-2024T09:21:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_OrangeHRM/LoginPage/input_Username_username"), userName): Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Username_username'
+
+06-10-2024T09:21:57 - [MESSAGE][PASSED] - Text 'Admin' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Username_username'
+
+06-10-2024T09:21:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_OrangeHRM/LoginPage/input_Password_password"), password): Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Password_password'
+
+06-10-2024T09:21:58 - [MESSAGE][PASSED] - Text 'admin123' is set on object 'Object Repository/Page_OrangeHRM/LoginPage/input_Password_password'
+
+06-10-2024T09:21:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_OrangeHRM/LoginPage/button_Login")): Object: 'Object Repository/Page_OrangeHRM/LoginPage/button_Login' is clicked on
+
+06-10-2024T09:21:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_OrangeHRM/LoginPage/button_Login' is clicked on
+
+06-10-2024T09:21:58 - [TEST_STEP][PASSED] - actual_Dashboard_Title = getText(findTestObject("Page_OrangeHRM/LoginPage/h6_Dashboard")): Text of object 'Object Repository/Page_OrangeHRM/LoginPage/h6_Dashboard' is: 'Dashboard'
+
+06-10-2024T09:22:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_OrangeHRM/LoginPage/h6_Dashboard' is: 'Dashboard'
+
+06-10-2024T09:22:00 - [TEST_STEP][PASSED] - verifyEqual(expected_Dahsboard_Title, actual_Dashboard_Title): Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+06-10-2024T09:22:00 - [MESSAGE][PASSED] - Actual object 'Dashboard' and expected object 'Dashboard' are equal
+
+06-10-2024T09:22:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TC_Login' successfully
+
+06-10-2024T09:22:00 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/a_Admin"), "Admin"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/a_Admin' are matched.
+
+06-10-2024T09:22:01 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/a_Admin' are matched.
+
+06-10-2024T09:22:01 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/a_PIM"), "PIM"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/a_PIM' are matched.
+
+06-10-2024T09:22:02 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/a_PIM' are matched.
+
+06-10-2024T09:22:02 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Buzz"), "Buzz"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Buzz' are matched.
+
+06-10-2024T09:22:02 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Buzz' are matched.
+
+06-10-2024T09:22:02 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Claim"), "Claim"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Claim' are matched.
+
+06-10-2024T09:22:02 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Claim' are matched.
+
+06-10-2024T09:22:02 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Dashboard"), "Dashboard"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Dashboard' are matched.
+
+06-10-2024T09:22:03 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Dashboard' are matched.
+
+06-10-2024T09:22:03 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Directory"), "Directory"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Directory' are matched.
+
+06-10-2024T09:22:03 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Directory' are matched.
+
+06-10-2024T09:22:03 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Leave"), "Leave"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Leave' are matched.
+
+06-10-2024T09:22:03 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Leave' are matched.
+
+06-10-2024T09:22:03 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Maintenance"), "Maintenance"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Maintenance' are matched.
+
+06-10-2024T09:22:03 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Maintenance' are matched.
+
+06-10-2024T09:22:03 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_My Info"), "My Info"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_My Info' are matched.
+
+06-10-2024T09:22:04 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_My Info' are matched.
+
+06-10-2024T09:22:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Performance"), "Performance"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Performance' are matched.
+
+06-10-2024T09:22:04 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Performance' are matched.
+
+06-10-2024T09:22:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Recruitment"), "Recruitment"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Recruitment' are matched.
+
+06-10-2024T09:22:04 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Recruitment' are matched.
+
+06-10-2024T09:22:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_OrangeHRM/DashBoard/span_Time"), "Time"): Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Time' are matched.
+
+06-10-2024T09:22:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_OrangeHRM/DashBoard/span_Time' are matched.
+
+06-10-2024T09:22:05 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+06-10-2024T09:22:05 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[06-10-2024T09:21:29 - [TEST_SUITE][PASSED] - Smoke: Test Cases/TC_Validate_Side_Menu]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Admin_Page_Validations</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d441008c-47dc-4a84-9490-53f8925a9eef</testCaseGuid>
+</TestCaseEntity>

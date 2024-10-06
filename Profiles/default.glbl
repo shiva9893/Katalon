@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://opensource-demo.orangehrmlive.com/auth/login'</initValue>
+      <name>appURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

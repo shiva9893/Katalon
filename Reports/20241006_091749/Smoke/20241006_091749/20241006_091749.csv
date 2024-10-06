@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Smoke,Chrome 129.0.0.0,,,06-10-2024 09:17:58,06-10-2024 09:19:43,1m - 44.758s,FAILED
+,,,,,,,
+Test Cases/TC_Login,Chrome 129.0.0.0,,,06-10-2024 09:17:59,06-10-2024 09:18:50,50.442s,FAILED
+"openBrowser("""")",Chrome 129.0.0.0,,,06-10-2024 09:18:00,06-10-2024 09:18:09,8.487s,PASSED
+"expected_Dahsboard_Title = ""Dashboard""",Chrome 129.0.0.0,,,06-10-2024 09:18:09,06-10-2024 09:18:09,0.022s,PASSED
+navigateToUrl(appURL),Chrome 129.0.0.0,,,06-10-2024 09:18:09,06-10-2024 09:18:13,3.925s,PASSED
+waitForPageLoad(10),Chrome 129.0.0.0,,,06-10-2024 09:18:13,06-10-2024 09:18:13,0.631s,PASSED
+maximizeWindow(),Chrome 129.0.0.0,,,06-10-2024 09:18:13,06-10-2024 09:18:14,0.295s,PASSED
+takeScreenshot(),Chrome 129.0.0.0,,,06-10-2024 09:18:14,06-10-2024 09:18:14,0.584s,PASSED
+"setText(findTestObject(""Page_OrangeHRM/LoginPage/input_Username_username""), userName)",Chrome 129.0.0.0,,,06-10-2024 09:18:14,06-10-2024 09:18:50,35.504s,FAILED
+,,,,,,,
+Test Cases/TC_Validate_Side_Menu,Chrome 129.0.0.0,,,06-10-2024 09:18:50,06-10-2024 09:19:43,53.458s,FAILED
+"callTestCase(findTestCase(""TC_Login""), [""appURL"":""https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"", ""userName"":""Admin"", ""password"":""admin123""], STOP_ON_FAILURE)",Chrome 129.0.0.0,,,06-10-2024 09:18:50,06-10-2024 09:19:43,52.973s,FAILED

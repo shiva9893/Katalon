@@ -17,25 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('TC_Login'), [('appURL') : 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
+        , ('userName') : 'Admin', ('password') : 'admin123'], FailureHandling.STOP_ON_FAILURE)
 
-def expected_Dahsboard_Title = 'Dashboard'
+WebUI.click(findTestObject('Page_OrangeHRM/DashBoard/span_Recruitment'))
 
-WebUI.navigateToUrl(GlobalVariable.appURL)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Recruitment_Page/h5_Candidates'), 0)
 
-WebUI.waitForPageLoad(10)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Recruitment_Page/h6_Recruitment'), 0)
 
-WebUI.maximizeWindow()
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Recruitment_Page/li_Candidates'), 0)
 
-WebUI.takeScreenshot()
-
-WebUI.setText(findTestObject('Page_OrangeHRM/LoginPage/input_Username_username'), userName)
-
-WebUI.setText(findTestObject('Page_OrangeHRM/LoginPage/input_Password_password'), password)
-
-WebUI.click(findTestObject('Page_OrangeHRM/LoginPage/button_Login'))
-
-String actual_Dashboard_Title = WebUI.getText(findTestObject('Page_OrangeHRM/LoginPage/h6_Dashboard'))
-
-WebUI.verifyEqual(expected_Dahsboard_Title, actual_Dashboard_Title)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Recruitment_Page/li_Vacancies'), 0)
 

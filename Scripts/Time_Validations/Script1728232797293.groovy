@@ -17,25 +17,28 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('TC_Login'), [('appURL') : 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
+        , ('userName') : 'Admin', ('password') : 'admin123'], FailureHandling.STOP_ON_FAILURE)
 
-def expected_Dahsboard_Title = 'Dashboard'
+WebUI.click(findTestObject('Page_OrangeHRM/DashBoard/span_Time'))
 
-WebUI.navigateToUrl(GlobalVariable.appURL)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/h6_Time'), 0)
 
-WebUI.waitForPageLoad(10)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/h6_Timesheets'), 0)
 
-WebUI.maximizeWindow()
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/li_Attendance'), 0)
 
-WebUI.takeScreenshot()
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/li_Project Info'), 0)
 
-WebUI.setText(findTestObject('Page_OrangeHRM/LoginPage/input_Username_username'), userName)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/li_Reports'), 0)
 
-WebUI.setText(findTestObject('Page_OrangeHRM/LoginPage/input_Password_password'), password)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/li_Timesheets'), 0)
 
-WebUI.click(findTestObject('Page_OrangeHRM/LoginPage/button_Login'))
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/button_View'), 0)
 
-String actual_Dashboard_Title = WebUI.getText(findTestObject('Page_OrangeHRM/LoginPage/h6_Dashboard'))
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/input'), 0)
 
-WebUI.verifyEqual(expected_Dahsboard_Title, actual_Dashboard_Title)
+WebUI.verifyElementPresent(findTestObject('Page_OrangeHRM/Time_Page/h6_Select Employee'), 0)
+
+WebUI.closeBrowser()
 

@@ -25,7 +25,7 @@
       <variableId>a2038373-723e-4757-9cef-224032b8d7d9</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</defaultValue>
+      <defaultValue>'https://opensource-demo.orangehrmlive.com/dashboard/index'</defaultValue>
       <description></description>
       <id>75f83450-90eb-4b20-90a3-28162048d3d2</id>
       <masked>false</masked>
